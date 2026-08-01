@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ==========================================================================
+     REPLACE BEFORE PUBLISHING - every placeholder is marked REPLACE
+     1. GitHub username           (search for: YOUR-GITHUB-USERNAME)
+     2. LinkedIn URL              (search for: YOUR-LINKEDIN)
+     3. Email address             (search for: YOUR-EMAIL)
+     4. Optional profile photo    (search for: images/profile.jpg)
+     ========================================================================== -->
+
+<title>Abirami Senthilkumar - QA AI Automation Engineer</title>
+<meta name="description" content="QA automation engineer working on BDD test frameworks, AI agent evaluation and data validation gates.">
+
+<meta property="og:title" content="Abirami Senthilkumar - QA AI Automation Engineer">
+<meta property="og:description" content="QA automation engineer working on BDD test frameworks, AI agent evaluation and data validation gates.">
+<meta property="og:type" content="website">
+
+<script>document.documentElement.classList.add('js');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+/* ---------------------------------------------------------------- tokens */
+:root{
+  --paper:#E9ECE6;
+  --card:#F4F6F1;
+  --ink:#15181A;
+  --slate:#59615C;
+  --rule:#CBD1C7;
+
+  --pass:#1E6B57;
+  --warn:#A96C1F;
+  --fail:#A32F4E;
+
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'Newsreader',Georgia,serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+
+  --rail:16rem;
+  --gap:clamp(1.25rem,4vw,3rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:clamp(1rem,.96rem + .2vw,1.075rem);
+  line-height:1.65;
+  font-weight:300;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--pass);outline-offset:3px;border-radius:2px}
+
+.skip{
+  position:absolute;left:-999px;top:0;z-index:99;
+  background:var(--ink);color:var(--paper);padding:.6rem 1rem;
+  font-family:var(--mono);font-size:.8rem;text-decoration:none;
+}
+.skip:focus{left:.5rem;top:.5rem}
+
+/* ------------------------------------------------------------- left rail */
+.rail{
+  position:fixed;inset:0 auto 0 0;width:var(--rail);
+  padding:2.5rem 1.75rem;
+  border-right:1px solid var(--rule);
+  display:flex;flex-direction:column;gap:2rem;
+  background:var(--paper);
+}
+.monogram{
+  width:3.25rem;height:3.25rem;border-radius:50%;
+  display:grid;place-items:center;
+  background:var(--ink);color:var(--paper);
+  font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:.04em;
+  object-fit:cover;
+}
+.rail h1{
+  font-family:var(--display);font-weight:600;
+  font-size:1.15rem;line-height:1.25;letter-spacing:-.015em;
+  margin:0 0 .35rem;
+}
+.rail .role{
+  font-family:var(--mono);font-size:.7rem;font-weight:500;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--slate);
+  margin:0;
+}
+.railnav{display:flex;flex-direction:column;gap:.1rem;margin-top:-.5rem}
+.railnav a{
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.02em;
+  text-decoration:none;color:var(--slate);
+  padding:.4rem 0 .4rem .95rem;
+  border-left:2px solid var(--rule);
+  transition:color .18s,border-color .18s;
+}
+.railnav a:hover{color:var(--ink);border-color:var(--slate)}
+.railnav a[aria-current="true"]{color:var(--ink);border-color:var(--pass);font-weight:500}
+.railfoot{margin-top:auto;display:flex;flex-direction:column;gap:.4rem}
+.railfoot a{
+  font-family:var(--mono);font-size:.75rem;color:var(--slate);
+  text-decoration:none;text-underline-offset:3px;
+}
+.railfoot a:hover{color:var(--pass);text-decoration:underline}
+
+/* ---------------------------------------------------------------- layout */
+main{margin-left:var(--rail);padding:0 var(--gap)}
+.wrap{max-width:52rem;margin:0 auto}
+section{padding:clamp(4rem,9vh,7rem) 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+
+.eyebrow{
+  font-family:var(--mono);font-size:.7rem;font-weight:500;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--slate);
+  margin:0 0 1.25rem;display:flex;align-items:center;gap:.7rem;
+}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--rule)}
+
+h2{
+  font-family:var(--display);font-weight:600;
+  font-size:clamp(1.5rem,1.2rem + 1vw,1.9rem);
+  letter-spacing:-.02em;line-height:1.2;margin:0 0 1.75rem;
+}
+p{margin:0 0 1.15rem;max-width:60ch}
+.lede{font-size:clamp(1.1rem,1rem + .5vw,1.3rem);line-height:1.55}
+
+/* ------------------------------------------------------------------ hero */
+#intro{padding-top:clamp(4.5rem,12vh,8rem)}
+.thesis{
+  font-family:var(--display);font-weight:600;
+  font-size:clamp(2rem,1.3rem + 3.2vw,3.5rem);
+  line-height:1.06;letter-spacing:-.035em;
+  margin:0 0 2rem;max-width:19ch;text-wrap:balance;
+}
+.thesis em{font-family:var(--body);font-style:italic;font-weight:300;letter-spacing:-.01em}
+
+.gate{
+  display:inline-flex;align-items:center;gap:.65rem;flex-wrap:wrap;
+  font-family:var(--mono);font-size:.75rem;letter-spacing:.02em;
+  color:var(--slate);border:1px solid var(--rule);background:var(--card);
+  padding:.5rem .85rem;border-radius:999px;margin-bottom:2.5rem;
+}
+.dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--pass);flex:none}
+
+.facts{
+  list-style:none;padding:0;margin:2.5rem 0 0;
+  display:grid;gap:1px;background:var(--rule);
+  border:1px solid var(--rule);
+  grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));
+}
+.facts li{background:var(--card);padding:1rem 1.1rem}
+.facts dt{
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--slate);margin-bottom:.4rem;
+}
+.facts dd{margin:0;font-size:.95rem;line-height:1.45}
+
+/* -------------------------------------------------------------- projects */
+.checks{list-style:none;padding:0;margin:0}
+.check{
+  border-top:1px solid var(--rule);
+  padding:1.9rem 0;
+  display:grid;grid-template-columns:7.5rem 1fr;gap:0 1.75rem;
+}
+.check:last-child{border-bottom:1px solid var(--rule)}
+.status{
+  font-family:var(--mono);font-size:.7rem;font-weight:700;
+  letter-spacing:.1em;color:var(--pass);
+  padding-top:.3rem;
+}
+.status span{
+  display:block;font-weight:400;letter-spacing:.02em;
+  color:var(--slate);margin-top:.35rem;font-size:.68rem;
+}
+.check h3{
+  font-family:var(--mono);font-weight:500;font-size:1rem;
+  letter-spacing:-.01em;margin:0 0 .5rem;
+}
+.check h3 a{text-decoration:none;background-image:linear-gradient(var(--pass),var(--pass));
+  background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;
+  transition:background-size .25s}
+.check h3 a:hover{color:var(--pass);background-size:100% 1px}
+.check p{margin:0 0 .8rem;font-size:.98rem}
+.caught{
+  font-family:var(--mono);font-size:.74rem;line-height:1.55;
+  color:var(--fail);margin:0 0 .85rem;max-width:58ch;
+}
+.caught b{font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:.66rem}
+.tags{display:flex;flex-wrap:wrap;gap:.35rem;list-style:none;padding:0;margin:0}
+.tags li{
+  font-family:var(--mono);font-size:.68rem;color:var(--slate);
+  border:1px solid var(--rule);border-radius:2px;padding:.15rem .45rem;
+}
+
+/* ------------------------------------------------------------ experience */
+.roles{list-style:none;padding:0;margin:0}
+.role-item{
+  display:grid;grid-template-columns:9.5rem 1fr;gap:0 1.75rem;
+  padding:1.6rem 0;border-top:1px solid var(--rule);
+}
+.role-item:last-child{border-bottom:1px solid var(--rule)}
+.when{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.03em;
+  color:var(--slate);padding-top:.35rem;
+}
+.role-item h3{
+  font-family:var(--display);font-weight:600;font-size:1.05rem;
+  letter-spacing:-.01em;margin:0 0 .15rem;
+}
+.where{font-size:.9rem;color:var(--slate);margin:0 0 .6rem;font-style:italic}
+.role-item p{margin:0;font-size:.97rem}
+
+/* --------------------------------------------------------------- contact */
+#contact p{max-width:46ch}
+.mailto{
+  display:inline-block;margin-top:.75rem;
+  font-family:var(--mono);font-size:.85rem;letter-spacing:.02em;
+  color:var(--pass);text-decoration:none;
+  border-bottom:1px solid var(--pass);padding-bottom:.15rem;
+}
+.mailto:hover{color:var(--ink);border-color:var(--ink)}
+footer{
+  margin-left:var(--rail);padding:2rem var(--gap) 3rem;
+  font-family:var(--mono);font-size:.7rem;color:var(--slate);
+  border-top:1px solid var(--rule);
+}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+/* ---------------------------------------------------------------- motion */
+.js .reveal{opacity:0;transform:translateY(12px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal,.js .reveal.in{opacity:1;transform:none;transition:none}
+  *{animation:none!important}
+}
+
+/* ---------------------------------------------------------------- mobile */
+@media (max-width:900px){
+  :root{--rail:0px}
+  .rail{
+    position:static;width:auto;flex-direction:row;flex-wrap:wrap;
+    align-items:center;gap:1rem 1.25rem;
+    padding:1.5rem var(--gap);
+    border-right:0;border-bottom:1px solid var(--rule);
+  }
+  .rail .who{flex:1 1 auto}
+  .railnav{flex-direction:row;flex-wrap:wrap;gap:.35rem .9rem;width:100%;margin:0}
+  .railnav a{border-left:0;border-bottom:2px solid var(--rule);padding:.2rem 0}
+  .railnav a[aria-current="true"]{border-color:var(--pass)}
+  .railfoot{flex-direction:row;gap:1rem;margin:0;width:100%}
+  main,footer{margin-left:0}
+  .check,.role-item{grid-template-columns:1fr;gap:.6rem}
+  .status,.when{padding-top:0}
+  .status span{display:inline;margin-left:.6rem}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="rail">
+  <!-- REPLACE: swap the div for <img class="monogram" src="images/profile.jpg" alt="Abirami Senthilkumar"> -->
+  <div class="monogram" aria-hidden="true">AS</div>
+
+  <div class="who">
+    <h1>Abirami Senthilkumar</h1>
+    <p class="role">QA AI Automation Engineer</p>
+  </div>
+
+  <nav class="railnav" aria-label="Sections">
+    <a href="#intro">Introduction</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Say hello</a>
+  </nav>
+
+  <div class="railfoot">
+    <!-- REPLACE all three -->
+    <a href="https://github.com/YOUR-GITHUB-USERNAME">GitHub &nearr;</a>
+    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn &nearr;</a>
+    <a href="mailto:YOUR-EMAIL">Email &nearr;</a>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+
+  <section id="intro">
+    <p class="gate"><span class="dot"></span> Arlington, Virginia &middot; open to QA automation roles</p>
+
+    <p class="thesis">I test the systems that <em>don't</em> give the same answer twice.</p>
+
+    <p class="lede">Three years of automating tests across UI, API and data layers &mdash; and,
+    more recently, across AI agents, where the thing under test is allowed to phrase its answer
+    differently every run and still be correct.</p>
+
+    <p>Most of my work is Python: Cucumber scenarios in Gherkin, Selenium and Playwright for the
+    browser, SQL for everything the interface won't tell you. The AI side started when a
+    conversational assistant on my project began shipping every two weeks and nobody could answer
+    the only question that mattered &mdash; <em>did anything get worse?</em> Manual review of the
+    evaluation export took a day and still missed regressions in the quieter intents.</p>
+
+    <p>So I stopped diffing spreadsheets and built a gate. That is roughly how everything below
+    started: a review that took too long, or a defect that walked between two green suites.</p>
+
+    <ul class="facts">
+      <li><dt>Testing</dt><dd>BDD &middot; Cucumber &middot; Selenium &middot; Playwright &middot; API &middot; UAT</dd></li>
+      <li><dt>AI &amp; agents</dt><dd>Agent behaviour, response accuracy and failure-scenario evaluation &middot; MCP tooling &middot; Microsoft Foundry</dd></li>
+      <li><dt>Data</dt><dd>PostgreSQL &middot; MySQL &middot; reconciliation and defect investigation</dd></li>
+      <li><dt>Pipelines</dt><dd>Azure DevOps &middot; release gating on production deployments</dd></li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <p class="eyebrow">Projects</p>
+    <h2>Five tools, each one built after something got through</h2>
+    <p style="margin-bottom:2.25rem">Every repo runs its own suite with no external service, so the
+    first thing you can do is clone it and watch it go green. Two of them fail on purpose out of the
+    box &mdash; the bundled example data contains a real regression, because a tool that catches
+    nothing on its demo proves nothing.</p>
+
+    <ul class="checks">
+
+      <li class="check reveal">
+        <div class="status">PASS<span>10 tests</span></div>
+        <div>
+          <h3><a href="https://github.com/YOUR-GITHUB-USERNAME/driftguard">driftguard</a></h3>
+          <p>Release-gate regression testing for chatbot responses. Scores an evaluation export
+          against an approved baseline, per intent, and fails the build when a release deviates
+          past a threshold the product owner signed off on.</p>
+          <p class="caught"><b>caught</b> &mdash; two answers that quietly became refusals between
+          releases, in an intent nobody was watching.</p>
+          <ul class="tags"><li>Python</li><li>JSONL evaluation</li><li>Azure DevOps</li></ul>
+        </div>
+      </li>
+
+      <li class="check reveal">
+        <div class="status">PASS<span>18 tests</span></div>
+        <div>
+          <h3><a href="https://github.com/YOUR-GITHUB-USERNAME/mcp-contract-tests">mcp-contract-tests</a></h3>
+          <p>A pytest plugin that pins an MCP server's tool contract and tests the paths nobody
+          writes happy-path tests for: timeouts, malformed payloads, and a tool that errors instead
+          of returning. Schema drift is classified as breaking or not, and shows up as a diff in
+          the pull request.</p>
+          <p class="caught"><b>caught</b> &mdash; a new required field upstream. The agent silently
+          stopped calling the tool and answered from memory instead.</p>
+          <ul class="tags"><li>pytest</li><li>MCP</li><li>fault injection</li><li>snapshot testing</li></ul>
+        </div>
+      </li>
+
+      <li class="check reveal">
+        <div class="status">PASS<span>54 steps</span></div>
+        <div>
+          <h3><a href="https://github.com/YOUR-GITHUB-USERNAME/bdd-fullstack-suite">bdd-fullstack-suite</a></h3>
+          <p>One Gherkin scenario asserting across the browser, the API and PostgreSQL. Seeding
+          happens through the API and never through the UI, every scenario owns its data, and
+          &ldquo;exactly one row landed in the ledger&rdquo; is a one-line step.</p>
+          <p class="caught"><b>caught</b> &mdash; a double-submit. The UI test asserted the banner,
+          the API test asserted 202, nobody asserted the row count.</p>
+          <ul class="tags"><li>behave</li><li>Cucumber</li><li>Playwright</li><li>psycopg</li></ul>
+        </div>
+      </li>
+
+      <li class="check reveal">
+        <div class="status">PASS<span>21 tests</span></div>
+        <div>
+          <h3><a href="https://github.com/YOUR-GITHUB-USERNAME/dataguard-sql">dataguard-sql</a></h3>
+          <p>Data checks a QA engineer can own: each one a few lines of YAML, run as a release gate,
+          reported as JUnit so a bad row appears in the same test report as a failing scenario.
+          Stored procedures are exercised inside a transaction that is always rolled back.</p>
+          <p class="caught"><b>caught</b> &mdash; an orphaned refund and a duplicate row from a
+          retried job. Neither was an application bug; both were reported as one.</p>
+          <ul class="tags"><li>PostgreSQL</li><li>stored procedures</li><li>YAML</li><li>JUnit</li></ul>
+        </div>
+      </li>
+
+      <li class="check reveal">
+        <div class="status">PASS<span>20 tests</span></div>
+        <div>
+          <h3><a href="https://github.com/YOUR-GITHUB-USERNAME/story2gherkin">story2gherkin</a></h3>
+          <p>Drafts Gherkin from a user story, then does the part that actually matters: drops
+          scenarios the suite already covers, explains why in plain numbers, and prints a
+          traceability matrix so an uncovered acceptance criterion is visible instead of assumed.
+          Nothing it writes is committed automatically.</p>
+          <p class="caught"><b>refused</b> &mdash; a criterion that said &ldquo;outside business
+          hours&rdquo; without defining the timezone. It asked rather than inventing one.</p>
+          <ul class="tags"><li>Python</li><li>LLM drafting</li><li>deduplication</li><li>traceability</li></ul>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="experience">
+    <p class="eyebrow">Experience</p>
+    <h2>Where the practice came from</h2>
+
+    <ul class="roles">
+      <li class="role-item">
+        <div class="when">Sep 2023 &ndash; now</div>
+        <div>
+          <h3>Quality Assurance Tester</h3>
+          <p class="where">Immigrant Services Association of Nova Scotia</p>
+          <p>Automated tests across UI, API and backend data in Python and Selenium; validation of
+          AI-driven and agentic workflows; Azure DevOps pipelines running the regression suite on
+          every production deployment; SQL investigation behind the defects that reach me.</p>
+        </div>
+      </li>
+      <li class="role-item">
+        <div class="when">Mar &ndash; Sep 2023</div>
+        <div>
+          <h3>LMS Test Admin &amp; Online IT Specialist</h3>
+          <p class="where">Immigrant Services Association of Nova Scotia</p>
+          <p>Python automation tools and Moodle plugins, Selenium UI automation, and Grafana
+          dashboards over MySQL to make learner data visible enough to argue about.</p>
+        </div>
+      </li>
+      <li class="role-item">
+        <div class="when">Jul &ndash; Sep 2022</div>
+        <div>
+          <h3>Analyst Programmer</h3>
+          <p class="where">Ramco Systems</p>
+          <p>Where the BDD habit started: acceptance criteria translated into Gherkin feature files
+          and step definitions, Cucumber with Python, in an Agile delivery model.</p>
+        </div>
+      </li>
+      <li class="role-item">
+        <div class="when">2022</div>
+        <div>
+          <h3>MSc (Integrated), Computer Science &amp; Technology</h3>
+          <p class="where">Women's Christian College, Chennai</p>
+          <p>CGPA 8.37/10. Technical coordinator for BLAZE and a member of the entrepreneurship cell.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <p class="eyebrow">Say hello</p>
+    <h2>Got something that's hard to assert on?</h2>
+    <p>Those are my favourite ones. If you're testing an agent, untangling a suite that passes while
+    the bug ships, or just want to talk about where BDD stops being useful &mdash; I'd like to hear
+    about it.</p>
+    <!-- REPLACE -->
+    <a class="mailto" href="mailto:YOUR-EMAIL">YOUR-EMAIL</a>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Built by hand. No template.</span>
+    <span>Last updated 2026</span>
+  </div>
+</footer>
+
+<script>
+// nav highlighting -------------------------------------------------------
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.railnav a'));
+  var sections = links
+    .map(function (link) { return document.querySelector(link.getAttribute('href')); })
+    .filter(Boolean);
+
+  if (!('IntersectionObserver' in window) || !sections.length) return;
+
+  var spy = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      links.forEach(function (link) {
+        link.setAttribute('aria-current', link.getAttribute('href') === '#' + entry.target.id);
+      });
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+
+  sections.forEach(function (section) { spy.observe(section); });
+})();
+
+// reveal on scroll -------------------------------------------------------
+(function () {
+  var items = document.querySelectorAll('.reveal');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (reduced || !('IntersectionObserver' in window)) {
+    items.forEach(function (item) { item.classList.add('in'); });
+    return;
+  }
+
+  var watcher = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('in');
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+
+  items.forEach(function (item) { watcher.observe(item); });
+})();
+</script>
+</body>
+</html>
